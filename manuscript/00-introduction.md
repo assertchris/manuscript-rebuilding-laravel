@@ -1,3 +1,5 @@
+# Introduction
+
 I am a huge fan of [Laravel](http://laravel.com), and I use it for about 90% of the projects I am involved, both professionally and personally. [Taylor Otwell](https://twitter.com/taylorotwell) has done an amazing job as developer and curator of the Laravel codebase.
 
 That said, I would love to learn how it’s built. Not just the parts that make it uniquely Laravel, but the core components and concepts that power modern PHP frameworks.
