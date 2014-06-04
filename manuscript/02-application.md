@@ -41,7 +41,8 @@ $class = $container->make("Acme\Class");
 
 As trite an example as that it; it illustrates about 80% of the usage of the IoC container. Laravel is filled with references to `$this->app`, which is this same `Application` instance.
 
-A> You can learn more about the Service Locator design pattern at **[http://en.wikipedia.org/wiki/Service_locator_pattern](http://en.wikipedia.org/wiki/Service_locator_pattern)**.
+A> You can learn more about the Service Locator design pattern at **[http://en.wikipedia.org/wiki/
+Service_locator_pattern](http://en.wikipedia.org/wiki/Service_locator_pattern)**.
 
 ## Application
 

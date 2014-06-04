@@ -59,7 +59,7 @@ public function detect($environments, $consoleArgs = null)
 ```
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/`
-`EnvironmentDetector.php`
+A> `EnvironmentDetector.php`
 
 Here we see the effects of the `$argv` array not being set. If the script is being run on the command line, the method that gets executed is:
 
@@ -82,7 +82,7 @@ protected function detectConsoleEnvironment(
 ```
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/`
-`EnvironmentDetector.php`
+A> `EnvironmentDetector.php`
 
 This specifically checks for the `env` command-line argument. If it is not provided, `EnvironmentDetector` defaults to the method used to determine the web environment…
 
@@ -108,7 +108,7 @@ protected function detectWebEnvironment($environments)
 ```
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/`
-`EnvironmentDetector.php`
+A> `EnvironmentDetector.php`
 
 Looking ahead to the end of the method; we see that the default environment (if no other environment is matched) is `production`.
 

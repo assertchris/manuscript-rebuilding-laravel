@@ -12,4 +12,4 @@ I’m talking about rebuilding, as a mechanic carefully deconstructs an engine s
 
 A> Composer installs version **4.1.27** at the time of writing.
 
-A> I have launched https://rebuildinglaravel.com to mirror this work. There are additional resources there.
+A> I have launched [https://rebuildinglaravel.com](https://rebuildinglaravel.com) to mirror this work. There are additional resources there.
