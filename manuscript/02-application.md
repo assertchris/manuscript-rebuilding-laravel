@@ -41,7 +41,7 @@ $class = $container->make("Acme\Class");
 
 As trite an example as that it; it illustrates about 80% of the usage of the IoC container. Laravel is filled with references to `$this->app`, which is this same `Application` instance.
 
-A> You can learn more about the Service Locator design pattern at **<http://en.wikipedia.org/wiki/Service_locator_pattern>**.
+A> You can learn more about the Service Locator design pattern at **[http://en.wikipedia.org/wiki/Service_locator_pattern](http://en.wikipedia.org/wiki/Service_locator_pattern)**.
 
 ## Application
 
@@ -80,7 +80,7 @@ A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/Application.
 
 This method stores a reference to the `Request` instance, in the `Container` storage. It uses the `instance()` method which differs slightly from `bind()` in that bind will create new instances when `make()` is called, while `instance()` and `make()` will return the same instance every time.
 
-A> The behavior of the `instance()` method allows Laravel to restrict these classes to having a single instance, without building them according to the Singleton design pattern. You can learn more about the Singleton design pattern at **<http://en.wikipedia.org/wiki/Singleton_pattern>**.
+A> The behavior of the `instance()` method allows Laravel to restrict these classes to having a single instance, without building them according to the Singleton design pattern. You can learn more about the Singleton design pattern at **[http://en.wikipedia.org/wiki/Singleton_pattern](http://en.wikipedia.org/wiki/Singleton_pattern)**.
 
 This method also stores a reference to itself in the `Container` storage. That is to say — when someone requests the class `Illuminate\Container\Container` from the container, they will get the shared instance of `Illuminate\Foundation\Application`. It’s interesting that it’s referred to by the full class path, but the reasons for that will become obvious when we look at the `Container` in greater depth.
 

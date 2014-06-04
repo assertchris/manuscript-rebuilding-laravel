@@ -34,7 +34,7 @@ The last `RewriteRule` line says that everything else should be redirected to `p
 
 A> This `public/.htaccess` file makes me think that Laravel is tailored to being used under Apache. The only other mainstream web server, that is commonly used to run PHP applications is Nginx, and it ignores `.htaccess` files.
 
-A> There is documentation for setting Laravel up to rewrite URLs in Nginx. You can find it at **<http://laravel.com/docs/installation#pretty-urls>**.
+A> There is documentation for setting Laravel up to rewrite URLs in Nginx. You can find it at **[http://laravel.com/docs/installation#pretty-urls](http://laravel.com/docs/installation#pretty-urls)**.
 
 A> **[Lovro Papež](https://twitter.com/slovenianGooner)** has put together **[a guide for setting these pretty URLs up in IIS](http://sloveniangooner.com/post/laravel-and-iis)**.
 
@@ -87,9 +87,9 @@ if (is_dir($workbench = __DIR__.'/../workbench'))
 
 A> This is from `bootstrap/autoload.php`
 
-Peeking inside this class we see the that it looks for files matching `autoload.php` which is a reference to Composer autoloader files in individual workbench folders. This is confirmed by **<http://laravel.com/docs/packages#development-workflow>**.
+Peeking inside this class we see the that it looks for files matching `autoload.php` which is a reference to Composer autoloader files in individual workbench folders. This is confirmed by **[http://laravel.com/docs/packages#development-workflow](http://laravel.com/docs/packages#development-workflow)**.
 
-A> Workbenches are in-development packages which are isolated from a Laravel application files while being included in the running of the application. You can create a new workbench with the `php artisan workbench` command. You can learn more about it at **<http://laravel.com/docs/packages#creating-a-package>**.
+A> Workbenches are in-development packages which are isolated from a Laravel application files while being included in the running of the application. You can create a new workbench with the `php artisan workbench` command. You can learn more about it at **[http://laravel.com/docs/packages#creating-a-package](http://laravel.com/docs/packages#creating-a-package)**.
 
 ## UTF-what?
 
