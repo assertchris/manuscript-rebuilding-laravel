@@ -165,4 +165,5 @@ public function handle(
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Http/FrameGuard.php`
 
-This method gets the response from Laravel (the entire response after dispatching to the action) and adds a header to it. The `SymfonyRequest` referenced here is `Symfony\Component\HttpFoundation\Request`. `HttpKernelInterface` also comes from Symfony…
+This method gets the response from Laravel (the entire response after dispatching to the action) and adds a header to it. The `SymfonyRequest` referenced here is `Symfony\Component\
+HttpFoundation\Request`. `HttpKernelInterface` also comes from Symfony…
