@@ -58,7 +58,8 @@ public function detect($environments, $consoleArgs = null)
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php`
+A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/
+EnvironmentDetector.php`
 
 Here we see the effects of the `$argv` array not being set. If the script is being run on the command line, the method that gets executed is:
 
@@ -80,7 +81,8 @@ protected function detectConsoleEnvironment(
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php`
+A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/
+EnvironmentDetector.php`
 
 This specifically checks for the `env` command-line argument. If it is not provided, `EnvironmentDetector` defaults to the method used to determine the web environment…
 
@@ -105,7 +107,8 @@ protected function detectWebEnvironment($environments)
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/EnvironmentDetector.php`
+A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/
+EnvironmentDetector.php`
 
 Looking ahead to the end of the method; we see that the default environment (if no other environment is matched) is `production`.
 
@@ -120,7 +123,8 @@ This calculated environment string is stored back in in the `Container` storage 
 $isSafeForAction = App::environment("local", "staging");
 ```
 
-A> You can learn more about environments at **<http://laravel.com/docs/configuration#environment-configuration>**.
+A> You can learn more about environments at **<http://laravel.com/docs/configuration#
+environment-configuration>**.
 
 ## Setting Paths
 
@@ -145,10 +149,10 @@ This method is given the contents of `bootstrap/paths.php`, an array of file pat
 
 {lang=php}
 ```
-"app"     → App::make("path")
-"public"  → App::make("path.public")
-"base"    → App::make("path.base")
-"storage" → App::make("path.storage")
+"app"     - App::make("path")
+"public"  - App::make("path.public")
+"base"    - App::make("path.base")
+"storage" - App::make("path.storage")
 ```
 
 A> The class `App` is made available through a series of class aliases. We’ll look into this another time. For now it is enough to know that `App` is a reference to the single `Container`/`Application` instance, which is where most other classes should be resolved out of.
