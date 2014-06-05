@@ -11,5 +11,3 @@ I have no interest in building a better Laravel. My efforts (and those of other 
 I’m talking about rebuilding, as a mechanic carefully deconstructs an engine so he can understand and work on the parts.
 
 A> Composer installs version **4.1.27** at the time of writing.
-
-A> I have launched [https://rebuildinglaravel.com](https://rebuildinglaravel.com) to mirror this work. There are additional resources there.
