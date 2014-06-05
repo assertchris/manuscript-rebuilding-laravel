@@ -69,7 +69,9 @@ protected function registerRouter()
 } 
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Routing/RoutingServiceProvider.php`
+A> This is from
+A> `vendor/laravel/framework/src/Illuminate/Routing/`  
+A> `RoutingServiceProvider.php`
 
 Now let’s then remind ourselves how the routes are dispatched:
 
@@ -80,7 +82,8 @@ Now let’s then remind ourselves how the routes are dispatched:
 - `Application->dispatch()` calls `Router->dispatch()`.
 `Router->dispatch()` calls `Router->run()`, via `Router->dispatchToRoute()`.
 
-- Results from `Route->run()` are wrapped in an instance of `Symfony\Component\HttpFoundation\Response`.
+- Results from `Route->run()` are wrapped in an instance of `Symfony\Component\HttpFoundation\`  
+`Response`.
 
 - `Application->run()` calls `Response->send()`.
 
@@ -126,7 +129,8 @@ public function dispatch(Request $request)
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Routing/Router.php`
 
-This means that anything a route callback (or action) returns will be wrapped in an instance of `Illuminate\Http\Response`, which is a subclass of `Symfony\Component\HttpFoundation\Response`.
+This means that anything a route callback (or action) returns will be wrapped in an instance of `Illuminate\Http\Response`, which is a subclass of `Symfony\Component\HttpFoundation\`  
+`Response`.
 
 ## Response
 
@@ -188,7 +192,8 @@ protected function shouldBeJson($content)
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Http/Response.php`
 
-From this, we can conclude that array(-like) structures and classes which implement `JsonableInterface` will be encoded. How does this relate to the `JsonResponse` class?
+From this, we can conclude that array(-like) structures and classes which implement  
+`JsonableInterface` will be encoded. How does this relate to the `JsonResponse` class?
 
 ## JsonResponse
 
@@ -196,7 +201,8 @@ From this, we can conclude that array(-like) structures and classes which implem
 
 A> You can find these options at `http://www.php.net/manual/en/function.json-encode.php`.
 
-`Illuminate\JsonResponse` subclasses `HttpFoundation\JsonResponse`, which deals specifically in JSON data. `Illuminate\JsonResponse` overrides a `setData` setter (similarly to how `Illuminate\Response` overrides the `setContent` setter):
+`Illuminate\JsonResponse` subclasses `HttpFoundation\JsonResponse`, which deals specifically in JSON data. `Illuminate\JsonResponse` overrides a `setData` setter (similarly to how  
+`Illuminate\Response` overrides the `setContent` setter):
 
 {lang=php}
 ```
