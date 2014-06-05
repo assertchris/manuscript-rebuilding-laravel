@@ -187,6 +187,7 @@ protected function prepareResponse($request, $response)
 
 A> This is from `vendor/laravel/framework/src/Illuminate/Routing/Router.php`
 
-If the filter(s) or the action returned anything other than a `Symfony\Component\HttpFoundation\Response` instance, it will be wrapped in a response object. Then the `prepare()` method is called on that response.
+If the filter(s) or the action returned anything other than a `Symfony\Component\`
+`HttpFoundation\Response` instance, it will be wrapped in a response object. Then the `prepare()` method is called on that response.
 
 This means we should study the `Route` and `Response` classes to fully understand the routing process. The rest of the `Router` class has utility methods to do various things, like get the current request or named parameters matched by the route.
