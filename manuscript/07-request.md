@@ -64,7 +64,9 @@ public function __construct(
 }
 ```
 
-A> This is from `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php`
+A> This is from
+A> `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/`  
+A> `Request.php`
 
 As you can see, the class is intended to be initialised with all of the request data. You may not see much point to the constructor [only] calling another method with all the same parameters, but this makes subclassing `Request` much easier. Overriding this method is as simple as remembering to call `parent::initialize()`.
 
@@ -121,7 +123,9 @@ public static function createFromGlobals()
 }
 ```
 
-A> This is from `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php`
+A> This is from
+A> `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/`  
+A> `Request.php`
 
 Heading over to the `createRequestFromFactory()` method, we see:
 
@@ -171,7 +175,9 @@ private static function createRequestFromFactory(
 }
 ```
 
-A> This is from `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php`
+A> This is from
+A> `vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/`  
+A> `Request.php`
 
 This method allows a consumer (or even a subclass) to define a method for creating new requests. If the `$requestFactory` property is set, it will be used. Should it return anything other than an instance of the `Request` class (or subclass thereof) an exception will be thrown.
 
