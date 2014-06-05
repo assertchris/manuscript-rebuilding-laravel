@@ -127,7 +127,8 @@ $isSafeForAction = App::environment("local", "staging");
 ```
 
 A> You can learn more about environments at
-A> **[http://laravel.com/docs/configuration#environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
+A> **[http://laravel.com/docs/configuration#](http://laravel.com/docs/configuration#environment-configuration)**  
+A> **[environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
 
 ## Setting Paths
 
