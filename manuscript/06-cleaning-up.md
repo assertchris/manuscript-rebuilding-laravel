@@ -80,7 +80,9 @@ public function load(Application $app, array $providers)
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php`
+A> This is from
+A> `vendor/laravel/framework/src/Illuminate/Foundation/`  
+A> `ProviderRepository.php`
 
 The main purpose of this method is to load the manifest file (and sometimes recompile it) in order to determine when each of the service providers should be loaded. The classes marked as `eager` (not the deferred classes) are created and registered.
 
