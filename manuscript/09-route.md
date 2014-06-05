@@ -103,7 +103,8 @@ A> This is from `vendor/symfony/routing/Symfony/Component/Routing/Route.php`
 
 A> The call to `preg_replace()` removes `?` from optional parameters (so that `{foo?}` becomes `{foo}`).
 
-The `SymfonyRoute` (`Symfony\Component\Routing\Route`) class passes its data to the `Symfony\Component\Routing\RouteCompiler` class, which generates a couple regular expressions and compiles input variables so that the route can easily be matched.
+The `SymfonyRoute` (`Symfony\Component\Routing\Route`) class passes its data to the `Symfony\`
+`Component\Routing\RouteCompiler` class, which generates a couple regular expressions and compiles input variables so that the route can easily be matched.
 
 The main regular expression generated, is then used in the `UriValidator` class:
 
@@ -120,7 +121,9 @@ public function matches(Route $route, Request $request)
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Routing/Matching/UriValidator.php`
+A> This is from
+A> `vendor/laravel/framework/src/Illuminate/Routing/Matching/`  
+A> `UriValidator.php`
 
 ## Validators
 
