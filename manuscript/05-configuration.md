@@ -46,7 +46,9 @@ public function load($environment = null)
 }
 ```
 
-A> This is from `vendor/laravel/framework/src/Illuminate/Configuration/EnvironmentVariables.php`
+A> This is from
+A> `vendor/laravel/framework/src/Illuminate/Configuration/`  
+A> `EnvironmentVariables.php`
 
 This means that the application environment variable is used to determine the configuration variables loaded. For instance, if the environment is set to local, the file .env.local.php is loaded.
 
@@ -56,7 +58,9 @@ These configuration files define arrays of keys and values. Multi-dimensional ar
 
 A> The `putenv()` call allows for the same variables to be pulled out with calls to the `getenv()` function.
 
-A> You can learn more about using these kinds of configuration files at **[http://laravel.com/docs/configuration#protecting-sensitive-configuration](http://laravel.com/docs/configuration#protecting-sensitive-configuration)**.
+A> You can learn more about using these kinds of configuration files at
+A> **[http://laravel.com/docs/configuration#](http://laravel.com/docs/configuration#protecting-sensitive-configuration)**  
+A> **[protecting-sensitive-configuration](http://laravel.com/docs/configuration#protecting-sensitive-configuration)**.
 
 ## Plain Old Configuration
 
@@ -90,7 +94,9 @@ A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/Application.
 
 This code is very similar to that used to load the .env.php files. Part of me thinks that could be abstracted in a useful way, so that the code isn’t repeated across packages…
 
-A> You can learn more about using configuration files at **[http://laravel.com/docs/configuration#environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
+A> You can learn more about using configuration files at 
+A> **[http://laravel.com/docs/configuration#](http://laravel.com/docs/configuration#environment-configuration)**  
+A> **[environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
 
 ## Exception Handling
 
