@@ -80,10 +80,11 @@ Now let’s then remind ourselves how the routes are dispatched:
 - `Application->run()` calls `Application->dispatch()`, via `Application->handle()`.
 
 - `Application->dispatch()` calls `Router->dispatch()`.
-`Router->dispatch()` calls `Router->run()`, via `Router->dispatchToRoute()`.
 
-- Results from `Route->run()` are wrapped in an instance of `Symfony\Component\HttpFoundation\`  
-`Response`.
+- `Router->dispatch()` calls `Router->run()`, via `Router->dispatchToRoute()`.
+
+- Results from `Route->run()` are wrapped in an instance of `Symfony\Component\`  
+`HttpFoundation\Response`.
 
 - `Application->run()` calls `Response->send()`.
 
