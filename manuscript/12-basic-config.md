@@ -6,6 +6,7 @@ I thought a good place to continue from would be the config package. Laravel man
 
 Most of the configuration settings are defined, in a number of `*.php` files, in `app/config`. They have a general structure resembling:
 
+{lang=php}
 ```
 <?php
   
@@ -25,6 +26,7 @@ The code which employs them loads the arrays (via the PHP `include` construct) i
 
 Recall that the `public/index.php` file loads a series of bootstrapping files, which result in an `Application` instance being created. In `vendor/.../Foundation/start.php` we see the following code:
 
+{lang=php}
 ```
 $app->instance('config', $config = new Config(
 	$app->getConfigLoader(), $env
@@ -35,6 +37,7 @@ A> This is from `vendor/laravel/framework/src/Illuminate/Foundation/start.php`
 
 Config is an instance of `Illuminate\Config\Repository`. That `getConfigLoader()` function does the following:
 
+{lang=php}
 ```
 public function getConfigLoader()
 {
@@ -55,6 +58,7 @@ You may also recall that the `Application` is an instance of the `Container`, an
 
 The main functionality behind the `FileLoader` class is in the `load()` method:
 
+{lang=php}
 ```
 public function load($environment, $group, $namespace = null)
 {
@@ -97,6 +101,7 @@ The `Iluminate\Config\Repository` class extends `Illuminate\Support\NamespacedIt
 
 This means you can access the application config settings as easily as:
 
+{lang=php}
 ```
 Config::get("view.paths");
 // where Config is an alias to Illuminate\Support\Facades\Config
@@ -104,6 +109,7 @@ Config::get("view.paths");
 
 ...and where package config settings can be accessed as easily as:
 
+{lang=php}
 ```
 Config::get("foo::bar.baz");
 // where "foo" is the namespace of a custom package
