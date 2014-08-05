@@ -92,13 +92,16 @@ A> This is from `bootstrap/start.php`
 
 Laravel also supports the use of `.env.*.php` files, which return one-dimensional arrays of configuration variables. These are accessed through the `getenv()` function and the `$_ENV[...] ` array.
 
-These files are useful for keeping configuration outside of the usual files, but we’ll not go into more detail than that. You can learn more about them at **[http://laravel.com/docs/configuration#protecting-sensitive-configuration.
+A> These files are useful for keeping configuration outside of the usual files, but we’ll not go into more detail than that. You can learn more about them at **[http://laravel.com/docs/configuration#](http://laravel.com/docs/configuration#protecting-sensitive-configuration.
+Merging Configuration)**
+A> **[protecting-sensitive-configuration.
 Merging Configuration](http://laravel.com/docs/configuration#protecting-sensitive-configuration.
 Merging Configuration)**.
 
 Configurations are merged somewhat recursively, from specific to general. If there is no applicable environmental configuration, the general configuration will be used. Stated differently, if `app/config/production/cache.php` is missing, `app/config/cache.php` will be entirely used. If a single key (inside `app/config/production/cache.php` is changed) that key will override the general config.
 
-A> I say "somewhat" because arrays of items will not be combined, but rather overridden. If you define just one new app.providers property, all of the others will be erased. For a full, recursive merge you’ll need to use the `append_config()` helper function: **[http://laravel.com/docs/configuration#environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
+A> I say "somewhat" because arrays of items will not be combined, but rather overridden. If you define just one new app.providers property, all of the others will be erased. For a full, recursive merge you’ll need to use the `append_config()` helper function: **[http://laravel.com/docs/configuration#](http://laravel.com/docs/configuration#environment-configuration)**
+A> **[environment-configuration](http://laravel.com/docs/configuration#environment-configuration)**.
 
 ## Testing
 
